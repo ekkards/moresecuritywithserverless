@@ -1,0 +1,15 @@
+{
+  "name": "verify-at-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "verify.js",
+  "scripts": {
+    "start": "node verify.js"
+  },
+  "author": "Ekkard Schnedermann",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.0.1",
+    "jwk-to-pem": "^1.2.6"
+  }
+}

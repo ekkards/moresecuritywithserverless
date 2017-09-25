@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script src="aws-cognito-sdk.min.js"></script>
+        <script src="amazon-cognito-identity.min.js"></script>
+    </head>
+
+    <body>
+        <script>   
+            // http://docs.aws.amazon.com/cognito/latest/developerguide/using-amazon-cognito-user-identity-pools-javascript-examples.html
+            // https://github.com/aws/amazon-cognito-identity-js
+        
+            // Step 2: Creating a User Pool Object in Your App
+            AWSCognito.config.region = 'eu-central-1';
+            var poolData = {
+                UserPoolId: 'eu-central-1_4M4qvLqWW',
+                ClientId: '2u1ad48o6h6se0iuumq2crdbg8'
+            };
+            var userPool = new AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool(poolData);
+            var userData = {
+                Username: 'demouser',
+                Pool: userPool
+            };
+        
+            // Use case 4 or Tutorial Step 5: Signing Users in to Your App
+            var authenticationData = {
+                Username: 'demouser',
+                Password: 'aA1$aA1$',
+            };
+        
+            var authenticationDetails =
+                new AWSCognito.CognitoIdentityServiceProvider.AuthenticationDetails(authenticationData);
+        
+            var cognitoUser =
+                new AWSCognito.CognitoIdentityServiceProvider.CognitoUser(userData);
+            cognitoUser.authenticateUser(authenticationDetails, {
+                onSuccess: function (result) {
+                    document.getElementById('idtoken').textContent = result.getIdToken().getJwtToken();
+                },
+                onFailure: function (err) {
+                    alert(err);
+                },
+                mfaRequired: function (codeDeliveryDetails) {
+                    var verificationCode = prompt('Please input verification code', '');
+                    cognitoUser.sendMFACode(verificationCode, this);
+                }
+            });
+        </script>
+    
+        <h1>Authenticate</h1>
+        <p>JWT token:</p>
+        <div id="idtoken"></div>
+
+    </body>
+
+</html>
