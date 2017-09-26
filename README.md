@@ -1,6 +1,7 @@
 # More Security with Serverless
 Code for my talk "More Security with Serverless"
 
+## Client
 get the code 
 ```
 git clone https://github.com/ekkards/moresecuritywithserverless
@@ -8,7 +9,7 @@ cd signin-at-client
 ```
 and run ```authenticate.html```
 
-## Get AWS Cognito SDK
+### Get AWS Cognito SDK
 ```
 curl https://raw.githubusercontent.com/aws/amazon-cognito-identity-js/master/dist/aws-cognito-sdk.min.js > signin-at-client/aws-cognito-sdk.min.js
 curl https://raw.githubusercontent.com/aws/amazon-cognito-identity-js/master/dist/aws-cognito-sdk.min.js.map > signin-at-client/aws-cognito-sdk.min.js.map
