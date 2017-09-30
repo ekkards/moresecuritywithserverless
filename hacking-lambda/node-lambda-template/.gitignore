@@ -32,7 +32,6 @@ node_modules
 .lock-wscript
 
 
-.env
 deploy.env
 event.json
 event_sources.json
