@@ -3,6 +3,5 @@
 verify-at-server/node_modules
 hacking-lambda/node_modules
 npm-debug.log
-Makefile
 lambda_function.zip
 output.json
