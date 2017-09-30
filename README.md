@@ -35,3 +35,9 @@ cd verify-at-server
 npm install
 npm start
 ```
+
+## Hacking Lambda
+- Install nvm with node 6.10.3
+- npm install -g node-lambda
+- install AWS CLI
+- install your AWS Keys

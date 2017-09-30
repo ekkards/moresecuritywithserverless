@@ -1,3 +1,5 @@
 .idea/
 .DS_Store
 verify-at-server/node_modules
+hacking-lambda/node_modules
+npm-debug.log
