@@ -5,3 +5,4 @@ npm-debug.log
 .lambda/
 lambda_function.zip
 output.json
+.vscode
