@@ -1,7 +1,7 @@
 test:
 	aws lambda invoke \
 		--function-name helloLeon output.json \
-		--payload '{"name": "World"}'
+		--payload '{"a": "(function () { console.log(process.env); return 3; })()", "b": "2"}'
 		
 
 upload:
