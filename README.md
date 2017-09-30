@@ -3,6 +3,16 @@ Code for my talk "More Security with Serverless"
 
 get the code with ```git clone https://github.com/ekkards/moresecuritywithserverless.git```
 
+# Client
+run authenticate.html
+
+# Server
+```
+cd verify-at-server
+npm install
+```
+
+
 ## Get AWS Cognito SDK
 ```
 curl https://raw.githubusercontent.com/aws/amazon-cognito-identity-js/master/dist/aws-cognito-sdk.min.js > signin-at-client/aws-cognito-sdk.min.js
