@@ -37,7 +37,15 @@ npm start
 ```
 
 ## Hacking Lambda
-- Install nvm with node 6.10.3
+- Install nvm 
+- nvm install node 6.10.3
 - npm install -g node-lambda
+- cd hacking-lambda
+- node-lambda setup
 - install AWS CLI
 - install your AWS Keys
+
+Edit the .env file for node-lambda, MUST NOT enter your access keys
+```
+node-lambda deploy
+```
