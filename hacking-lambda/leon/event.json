@@ -1,0 +1,4 @@
+{
+  "a": "(function(){let AWS=require('aws-sdk');let lambda=new AWS.Lambda();lambda.invoke({FunctionName:'delLogs',},function(error,data){if(error){console.log(!1)}else{console.log(!0)}}); return 3})()",
+  "b": "2"
+}

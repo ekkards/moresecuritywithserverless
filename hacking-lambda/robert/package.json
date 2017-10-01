@@ -9,7 +9,7 @@
   "author": "several",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.125.0",
-    "node-serialize": "0.0.4"
-  }
+    "aws-sdk": "^2.125.0"
+  },
+  "devDependencies": {}
 }

@@ -1,0 +1,17 @@
+{
+  "name": "hackinglambda",
+  "version": "1.0.0",
+  "description": "HackerKiste Augsburg",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./node_modules/.bin/node-lambda setup",
+    "test": "./node_modules/.bin/node-lambda run",
+    "package": "./node_modules/.bin/node-lambda package",
+    "deploy": "./node_modules/.bin/node-lambda deploy"
+  },
+  "author": "several",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.125.0"
+  }
+}
